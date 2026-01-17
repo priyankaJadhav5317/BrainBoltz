@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+  <div class="left">☰ <span class="brand">BrainBoltz</span></div>
+  <div class="center">Your <strong>Tasks</strong></div>
+  <div class="right">🔔 👤</div>
+</header>
+   <h1>TASK</h1>
+        <div class="grid">
+            
+            <div class="task-card">
+                <span class="task-type assignment">Assignment</span>
+                <div class="task-title">COMPLETE LAB 5 BEE </div>
+                <div class="task-course"></div>
+                <div class="due">Tomorrow</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%"></div>
+                </div>
+                <div class="progress-text">40% Complete</div>
+            </div>
+
+      
+            <div class="task-card">
+                <span class="task-type activity">Activity</span>
+                <div class="task-title">CREATE A DRAFT</div>
+                <div class="task-course"></div>
+                <div class="due">2 days left</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%"></div>
+                </div>
+                <div class="progress-text">60% Complete</div>
+            </div>
+
+          
+            <div class="task-card">
+                <span class="task-type lab"HACKATHON></span>
+                <div class="task-title">COMPLETE IDEA OF HACKATHON</div>
+                <div class="task-course"></div>
+                <div class="due">Jan 20, 2026</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%"></div>
+                </div>
+                <div class="progress-text">40% Complete</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+            });
+        });
+
+       
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+             
+            });
+        });
+    </script>
+
+
+<nav class="bottom-nav">
+  <a href="./index.html" class="active" >🏠 Home</span>
+  <a href="./subject.html" id="subject" class="click" >Subjects</span>
+  <a href="./project.html" id="project" class="click">Projects</span>
+  <a href="./exam.html" id="exam" class="click">Exams</span>
+  <a href="./tasks.html" id="tasks" class="click">Tasks</span>
+</nav>
+</body>
+</html>

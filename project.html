@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+  <div class="left">☰ <span class="brand">BrainBoltz</span></div>
+  <div class="center">Your <strong>Projects</strong></div>
+  <div class="right">🔔 👤</div>
+</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTSS</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <h1>PROJECTS</h1>
+       
+        <div class="grid">
+           
+            <div class="project-card">
+                <span class="project-type assignment">app model</span>
+                <div class="project-title"></div>
+                <div class="project-course"></div>
+                <div class="due">10 feb</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%"></div>
+                </div>
+                <div class="progress-text">40% Complete</div>
+            </div>
+
+            
+             <div class="project-card">
+                <span class="project-type assignment">mediguard ai</span>
+                <div class="project-title"></div>
+                <div class="project-course"></div>
+                <div class="due">20 feb</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 10%"></div>
+                </div>
+                <div class="progress-text">10% Complete</div>
+            </div>
+
+          
+            <div class="project-card">
+                <span class="project-type assignment">hackfusion 2025</span>
+                <div class="project-title"></div>
+                <div class="project-course"></div>
+                <div class="due">30 jan</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%"></div>
+                </div>
+                <div class="progress-text">60% Complete</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                // Add filtering logic here for real data
+            });
+        });
+
+        // View toggle (Grid active by default)
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                // Implement list view transformation if needed
+            });
+        });
+    </script>
+</body>
+</html>
+<nav class="bottom-nav">
+  <a href="./index.html" class="active" >🏠 Home</span>
+  <a href="./subject.html" id="subject" class="click" >Subjects</span>
+  <a href="./project.html" id="project" class="click">Projects</span>
+  <a href="./exam.html" id="exam" class="click">Exams</span>
+  <a href="./tasks.html" id="tasks" class="click">Tasks</span>
+</nav>
+</body>
+</html>
